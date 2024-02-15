@@ -13,7 +13,7 @@ Welcome to the GPT Voice Wrapper Library! This library is designed to streamline
 
 ## Installation
 
-Ensure you have Python installed on your system and your preferred AI model API set up. The library does not include API access; you must obtain this separately from your AI provider.
+Ensure you have Python installed on your system. The library does not include API access; you must obtain this separately from your AI provider.
 
 ---
 
@@ -21,9 +21,22 @@ Ensure you have Python installed on your system and your preferred AI model API 
 
 1. **Clone the Repository**: Clone the project repository to your local machine.
 
-2. **.env File**: Copy the provided `.env` file in your project root directory.
+2. Use `pip` to install the required packages. Open your terminal or command prompt, navigate to the directory containing your `requirements.txt` file, and run the following command:
 
-3. **Load Environment Variables**: Ensure your script loads the environment variables from the `.env` file at runtime, using a library such as `python-dotenv`.
+```bash
+pip install -r requirements.txt
+```
+
+3. **.env File**: Copy the provided `.env` file in your project root directory. The file shoud like as follows:
+
+```plaintext
+AZURE_OPENAI_ENDPOINT="https://your-openai-endpoint.azure.com/"
+AZURE_OPENAI_KEY="your-openai-key-here"
+AZURE_SPEECH_KEY="your-speech-service-key-here"
+AZURE_SPEECH_REGION="your-speech-service-region-here"
+```
+
+4. **Load Environment Variables**: Ensure your script loads the environment variables from the `.env` file at runtime, using a library such as `python-dotenv`.
 
 ---
 
